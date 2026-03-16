@@ -168,28 +168,6 @@ This project develops a machine learning model to predict hourly bike rental dem
 
 ---
 
-## 🛠️ Technical Implementation
-
-### Model Artifact
-
-```python
-artifact = {
-    "model": tuned_xgboost_model,
-    "threshold_config": {
-        "low_percentile": 0.25,
-        "mid_percentile": 0.50,
-        "high_percentile": 0.75
-    },
-    "training_stats": {
-        "q1": 40,
-        "median": 142,
-        "q3": 242
-    },
-    "features": ["hr", "temp", "hum", "weathersit", "day_of_week", "season", "holiday"]
-}
-```
----
-
 ## 📊 Conclusion
 
 The XGBoost model delivers **strong predictive performance** with **85.2% accuracy** (R²) and a **Mean Absolute Error of 45 bikes per hour**. This translates to an estimated **$340,000 in annual savings** through improved demand forecasting.
@@ -204,9 +182,4 @@ With proper deployment and periodic retraining, this model serves as a **robust 
 
 ---
 
-
-## 🙏 Acknowledgments
-
-- Capital Bikeshare for providing public dataset
-- Scikit-learn & XGBoost communities for excellent documentation
-```
+**Streamlit App:** https://predictbike.streamlit.app/
